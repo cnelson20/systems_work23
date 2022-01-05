@@ -5,6 +5,7 @@ int main() {
   from_server = client_handshake(&to_server);
   if (from_server == -1) {
 	  printf("[client]: could not connect to server\n");
+	  return 1;
   }
   printf("[client]: connected on socket %d\n",from_server);
 
